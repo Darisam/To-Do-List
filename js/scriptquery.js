@@ -27,3 +27,5 @@ deleteButton.on('click', function() {
   li.addClass('delete');
 })
 
+$('#list').sortable();
+}
