@@ -11,3 +11,9 @@ if (inputValue === '') {
   $('#list').append(li);
 }
 
+// Cross out items on doubleclick
+
+li.on('dblclick', function() {
+  li.toggleClass('strike');
+});
+
