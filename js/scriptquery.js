@@ -17,3 +17,13 @@ li.on('dblclick', function() {
   li.toggleClass('strike');
 });
 
+// Add X button to delete items
+
+let deleteButton = $('<deleteButton>');
+deleteButton.text('X');
+li.append(deleteButton);
+
+deleteButton.on('click', function() {
+  li.addClass('delete');
+})
+
